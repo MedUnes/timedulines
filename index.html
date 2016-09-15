@@ -1,0 +1,232 @@
+<html lang="us">
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">		
+		<!-- ------------------------------------ -->
+		<!-- SCRIPTS -->	
+		<!-- ------------------------------------ -->
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		
+		<!-- Bootstrap -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- Github Buttons SCRIPT -->
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+		
+		<!-- timedulines SCRIPT -->	
+		<script src="js/timedulines.js"></script>
+		
+		<!-- Highlight.js SCRIPT -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+		
+		<!-- sample SCRIPT -->
+		<script src="js/sample.js"></script>	
+		
+		<!-- ------------------------------------ -->
+		<!-- STYLESHEETS -->
+		<!-- ------------------------------------ -->
+		
+		<!-- BOOTSTRAP 3.3.6 STYLE	 -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- FONT AWESOME 4.6.3 STYLE	 -->	
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		
+		<!-- timedulines STYLE-->
+		<link rel="stylesheet" type="text/css" href="css/timedulines.css">
+		
+		<!-- sample STYLE-->	
+		<link rel="stylesheet" type="text/css" href="css/sample.css">		
+		
+		<!-- Highlight.js STYLE-->
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#heading">Timedulines</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a class="smooth-scroll" href="#heading">Home</a></li>
+						<li><a class="smooth-scroll" href="#features">Features</a></li>
+						<li><a class="smooth-scroll" href="#usage">Usage</a></li>
+						<li><a class="smooth-scroll" href="#demo">Demo</a></li>
+						<li><a class="smooth-scroll" href="#todo">Todo</a></li>
+						<li><a class="smooth-scroll" href="#credits">Credits</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="quick-start">
+			<div id="heading" class="container-fluid">
+				<div class="row text-center">
+					<h1>Timedulines</h1>
+					<h5 class="text-center">by <a target="_blank" href="http://www.medunes.net"> MedUnes</a></h5>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-3 col-xs-6">
+						<h4>A JS/CSS bootstrap-based module that can be very easily integrated in a web page to show custom timelines in an elegant way.</h4>
+					</div>
+				</div>
+				<div class="row text-center">
+					<a target="_blank" href="download/timedulines.zip" class="btn"> Download <i class="fa fa-download fa-3x"></i></a>
+					<a target="_blank" href="https://github.com/MedUnes/timedulines" class="btn">Github <i class="fa fa-github fa-3x"></i></a>
+				</div>
+			</div>
+			<!-- Container (Features Section) -->
+			<div id="features" class="container-fluid text-center">
+				<h2>FEATURES</h2>
+				<div class="row ">
+					<div class="col-xs-4">
+						<span class="fa fa-mobile logo-small"></span>
+						<h4>Responsive</h4>
+					</div>
+					<div class="col-xs-4">
+						<span class="fa fa-cogs logo-small"></span>
+						<h4>Dynamic</h4>
+					</div>
+					<div class="col-xs-4">
+						<span class="fa fa-thumbs-o-up logo-small"></span>
+						<h4>Easy</h4>
+					</div>
+				</div>
+			</div>
+			<div id="usage" class="container-fluid text-center">
+				<h2>How to use Timedulines</h2>
+				<div class="row">	
+					<div class="col-xs-offset-2 col-xs-8">
+						<ol class="text-left">
+							<li>Download <em>timedulines.css</em> & <em>timedulines.css</em> from the <a class="smooth-scroll" href="#heading">link above</a></li>	
+							<li>Copy them to your working path (Ex: /css/timedulines.css & /js/timedulines.js)</li>	
+							<li>Include timedulines files in your HTML file as follows:</li>
+							<div class="row">	
+								<div class="col-xs-12">
+									<pre>
+										<code class="text-left html">
+&ltscript src="js/timedulines.js"&gt&lt/script>
+&ltlink rel="stylesheet" type="text/css" href="css/timedulines.css"&gt
+										</code>
+									</pre>
+								</div>
+							</div>
+							<li>Make sure you include Timedulines <em>dependencies</em> in your HTML file, which are:
+								<ul>
+									<li><a href="https://code.jquery.com/jquery-2.2.4.min.js" target="_blank">JQUERY </a></li>
+									<li><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" target="_blank">Bootstrap CSS</a> and <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" target="_blank">Bootstrap  JS</a></li>
+								</ul>
+							</li>
+							<li>Create your custom timeline JS file (Ex: <em>my-timeline.js</em>)</li>
+							<li>Customize your timeline by building the <em>ColorPalette</em>, <em>timeHeader</em> and <em>timePoint</em> objects. Here is an example:</li>
+							<div class="row">	
+								<div class="col-xs-12">
+									<pre>
+										<code class="text-left">
+var colorPalette=['#FEC900','#595779','#9BAD01','#FF6D00','#C0116E','#4A6AB5','#B51A1E'];
+var timeHeader={header:"MY CAREER",subHeader:"Step by step"};
+var timePoint=
+[
+{
+date:'2013',
+title:'Title 1',
+content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+},
+{
+date:'2014',
+title:'Title 2',
+content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+},
+{
+date:'2015',
+title:'Title 3',
+content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+},
+{
+date:'2016',
+title:'Title 4',
+content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+}
+];
+										</code>
+									</pre>
+								</div>
+							</div>
+							<li>Call timedulines from your customized JS file using the <em>initTimedulines()</em> function :</li>
+							<div class="row text-center">	
+								<div class="col-xs-12">
+									<pre>
+										<code class="text-left">
+initTimedulines(colorPalette,timePoint,timeHeader);
+										</code>
+									</pre>
+								</div>
+							</div>
+							<li>The code above results in the following timeline:</li>
+						</ol>
+					</div>
+				</div>	
+			</div>
+		</div>	
+		<div id="demo" class="container-fluid text-center">
+			<div class="row">
+				<div class="container-fluid" id="timedulines"></div>
+			</div>
+		</div>
+		
+		<div class="quick-start">
+			<div id="todo" class="container-fluid">
+				<div class="row text-center">	
+					<div class="col-xs-offset-2 col-xs-8">
+						<h2>TODO..</h2>
+						<h4 class="text-left">
+							This version of <em>Timedulines</em> is one of my very first finished works.
+							So I'm sure it lacks many imporovements and can include much more features.
+							Some of them are:
+						</h4>
+					</div>
+				</div>
+				<div class="row">	
+					<div class="col-xs-offset-2 col-xs-6">
+						<ul class="text-left">
+							<li>Theme builder/customizer: Fonts, Colors, sizes, etc.</li>
+							<li>Wordpress plugin</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">	
+					<div class="col-xs-offset-2 col-xs-8">
+						<h4>
+							I would also be very thankful if you contribute to the Timedulines Project on Github.
+						</h4>
+					</div>
+				</div>
+				<div class="social row text-center">	
+					<a class="github-button" href="https://github.com/medunes/timedulines" data-icon="octicon-star" data-style="mega" data-count-href="/medunes/timedulines/stargazers" data-count-api="/repos/medunes/timedulines#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star medunes/timedulines on GitHub">Star</a>
+					<a class="github-button" href="https://github.com/medunes/timedulines/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/medunes/timedulines/network" data-count-api="/repos/medunes/timedulines#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork medunes/timedulines on GitHub">Fork</a>
+				</div>
+			</div>
+			<div id="credits" class="container-fluid text-center">
+				<div class="row">
+					<h2>Credits</h2>
+					<h4>Timedulines has been inspired by <a target="_blank" href="http://www.freepik.com/free-vector/modern-timeline-infographic_794186.htm">this mockup</a> from <a target="_blank" href="http://www.freepik.com/"><img class="img-thumbnail" src="http://plenainclusionaragon.com/archivos/contenidos/images/Logos/freepik-logo.jpg"></img></a></h4>
+				</div>
+			</div>
+		</div>
+		<div  class="container-fluid"id ="footer">
+			<div class="row">
+				<div class="text-center col-xs-6 col-xs-offset-3">
+					Timedulines 2016. Coded from scratch by <a target ="_blank" href="http://www.medunes.net">MedUnes  </a>.
+				</div>
+			</div>
+		</div>
+	</body>
+</html>	
